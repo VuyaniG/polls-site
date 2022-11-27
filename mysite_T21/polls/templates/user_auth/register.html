@@ -1,0 +1,13 @@
+<h1> Register as New User </h1>
+<form action="{% url 'user_auth:register' %}" >
+    <label>Username</label>
+    <input type="text" name="username" placeholder="User" required>
+    <br/><br/>
+    <label>Password</label>
+    <input type="password" name="password" required>
+    <br/><br/>
+    <input type="submit" value="Register" />    
+</form>
+<form action="{% url 'user_auth:login' %}">
+    <input type="submit" value="Already Registered? Login" />
+</form>
